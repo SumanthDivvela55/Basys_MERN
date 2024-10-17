@@ -12,7 +12,7 @@ function Login() {
         e.preventDefault();
         try {
             // Send login request to the backend
-            const response = await axios.post('https://basys-ai-mern.onrender.com/api/auth/login', {
+            const response = await axios.post('http://localhost:5000/api/auth/login', {
                 username,
                 password,
             });

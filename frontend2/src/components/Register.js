@@ -16,7 +16,7 @@ function Register() {
         }
 
         try {
-            await axios.post('https://basys-ai-mern.onrender.com/api/auth/register', {
+            await axios.post('http://localhost:5000/api/auth/register', {
                 username,
                 password,
             });

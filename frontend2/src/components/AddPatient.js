@@ -14,7 +14,7 @@ const AddPatient = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('https://basys-ai-mern.onrender.com/api/patients', {
+            await axios.post('http://localhost:5000/api/patients', {
                 name,
                 age,
                 condition,

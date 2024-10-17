@@ -11,7 +11,7 @@ function PatientList() {
 
     useEffect(() => {
         const fetchPatients = async () => {
-            const res = await axios.get('https://basys-ai-mern.onrender.com/api/patients');
+            const res = await axios.get('http://localhost:5000/api/patients');
             setPatients(res.data);
         };
         fetchPatients();
@@ -62,7 +62,7 @@ function PatientList() {
     const handleLogout = async () => {
         // Call the backend to log out the user (if necessary)
         try {
-            await axios.post('https://basys-ai-mern.onrender.com/api/logout');
+            await axios.post('http://localhost:5000/api/logout');
         } catch (error) {
             console.error('Logout failed:', error);
         }

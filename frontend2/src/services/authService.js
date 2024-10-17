@@ -1,7 +1,7 @@
 import axios from 'axios';
 import {jwtDecode} from 'jwt-decode';
 
-const API_URL = 'https://basys-ai-mern.onrender.com/api/auth';
+const API_URL = 'http://localhost:5000/api/auth';
 
 export const login = async (username, password) => {
     const response = await axios.post(`${API_URL}/login`, { username, password });
