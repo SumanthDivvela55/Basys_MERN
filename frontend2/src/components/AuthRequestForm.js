@@ -46,7 +46,7 @@ function AuthRequestForm() {
         const validationErrors = validate();
         if (Object.keys(validationErrors).length === 0) {
             try {
-                await axios.post('http://localhost:5000/api/auth/request', {
+                await axios.post('https://basys-mern.onrender.com/api/auth/request', {
                     ...formData,
                     patientId
                 });

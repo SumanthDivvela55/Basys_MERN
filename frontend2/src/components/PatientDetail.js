@@ -8,7 +8,7 @@ function PatientDetail() {
 
     useEffect(() => {
         const fetchPatient = async () => {
-            const res = await axios.get(`http://localhost:5000/api/patients/${id}`);
+            const res = await axios.get(`https://basys-mern.onrender.com/api/patients/${id}`);
             setPatient(res.data);
         };
         fetchPatient();
